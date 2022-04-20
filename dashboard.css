@@ -8,6 +8,7 @@ body {
   grid-template-rows: 1fr 5fr;
   box-sizing: border-box;
   margin: 0;
+  background-color: rgb(243, 244, 246);
 }
 
 p {
@@ -44,12 +45,17 @@ p {
 
 .user-profile {
   display: grid;
-  grid-template-columns: 25px 25px 1fr;
+  grid-template-columns: 25px 75px 1fr;
   align-items: center;
   gap: 15px;
   justify-self: end;
   padding-right: 100px;
   font-weight: bold;
+}
+
+.profile {
+  width: 75px;
+  border-radius: 50%;
 }
 
 .lower-header {
@@ -61,7 +67,7 @@ p {
 
 .user-greeting {
   display: grid;
-  grid-template-columns: 50px 1fr;
+  grid-template-columns: 75px 1fr;
   grid-template-rows: 1fr 1fr;
   align-items: center;
   font-weight: bold;
@@ -135,6 +141,10 @@ img {
   margin-bottom: 50px;
 }
 
+.card, .trending, .announcements, .header-container {
+  background-color: rgb(255, 255, 255);
+}
+
 .cards-container {
   grid-row: 1 / 3;
 }
@@ -198,6 +208,7 @@ img {
   padding: 19px;
   font-size: 0.8rem;
   box-shadow:  3px 3px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
 }
 
 .announcements div {
@@ -223,8 +234,9 @@ img {
 .trending-block {
   font-size: 0.8rem;
   display: grid;
-  grid-template-columns: 25px 1fr;
+  grid-template-columns: 75px 1fr;
   grid-template-rows: 15px 15px;
+  align-content: center;
 }
 
 .trending {
@@ -232,6 +244,7 @@ img {
   box-shadow:  3px 3px 5px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   grid-template-rows: 1fr 1fr 1fr 1fr;
+  padding: 25px;
 }
 
 .trending-block>img {
