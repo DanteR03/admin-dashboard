@@ -1,4 +1,4 @@
-* {
+{
   border: 1px solid black;
 }
 
@@ -163,10 +163,13 @@ img {
 
 .annoucements-container {
   display: grid;
+  grid-template-rows: 20px 300px;
+}
+
+.announcements {
+  display: grid;
   grid-template-rows: 100px 100px 100px;
-  align-items: center;
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
+  padding: 19px;
 }
 
 .trending-container {
