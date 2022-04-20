@@ -13,21 +13,24 @@ html {
 
 body {
   display: grid;
-  grid-template-columns: 250px 1100px;
-  grid-template-rows: 250px 550px;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 5fr;
   box-sizing: border-box;
   margin: 0;
+  gap: 20px;
 }
 
 .header-container {
   display: grid;
-  grid-template-rows: 100px 100px;
+  grid-template-rows: 1fr 1fr;
+  gap: 25px;
 }
 
 .upper-header {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding-left: 20px;
+  padding-top: 10px;
 }
 
 .search {
@@ -96,7 +99,7 @@ button {
   background-color: rgb(14, 165, 233);
   display: grid;
   grid-area: 1 / 1 / 3 / 2;
-  grid-template-rows: 100px 420px 250px;
+  grid-template-rows: 1fr 2fr 2fr;
   gap: 30px;
 }
 
@@ -124,7 +127,7 @@ img {
 .main-container {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 350px 200px;
 }
 
 .cards-container>p {
@@ -146,6 +149,7 @@ img {
   display: grid;
   grid-template-rows: 25px 85px;
   grid-template-columns: 150px 150px;
+  font-size: 0.8rem;
 }
 
 .card p {
@@ -170,12 +174,39 @@ img {
   display: grid;
   grid-template-rows: 100px 100px 100px;
   padding: 19px;
+  font-size: 0.8rem;
 }
 
 .trending-container {
   display: grid;
   align-items: center;
   grid-column: 2 / 3;
+  grid-template-rows: 15px 1fr;
+}
+
+.trending-block {
+  font-size: 0.8rem;
+  display: grid;
+  grid-template-columns: 25px 1fr;
+  grid-template-rows: 15px 15px;
+  gap: 5px;
+}
+
+.trending {
+  display: grid;
+  gap: 25px;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+.trending-block>img {
+  grid-row: 1 / 3;
+  align-self: center;
+}
+
+.trending-block>p {
+  grid-column: 2 / 3;
+  align-self: center;
 }
 
 ul {
