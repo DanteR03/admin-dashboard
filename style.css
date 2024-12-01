@@ -10,6 +10,7 @@
 
 :root {
     --sidebar-background-color: #38bdf8;
+    --button-background-color: var(--sidebar-background-color)
 }
 
 body {
@@ -65,7 +66,8 @@ body {
     display: grid;
     align-items: center;
     font-size: 1.5rem;
-    padding: 0px 32px;
+    padding-left: 32px;
+    padding-right: 64px;
 }
 
 .upper-header-container {
@@ -88,8 +90,12 @@ body {
     gap: 8px;
 }
 
-.search-container input {
+.search-container input,
+button {
     border-radius: 25px;
+}
+
+.search-container input {
     height: 2rem;
     background-color: lightgrey;
     outline: none;
@@ -105,15 +111,61 @@ body {
     grid-template-columns: min-content min-content 1fr;
     gap: 32px;
     justify-self: end;
-    padding-right: 64px;
     font-weight: bold;
 }
 
 .profile-avatar {
     width: 50px;
     height: 50px;
+}
+
+.profile-avatar,
+.greeting-profile-avatar {
     background-color: lightgrey;
     border-radius: 50%;
+}
+
+.greeting-profile-avatar {
+    width: 75px;
+    height: 75px;
+    grid-row: 1 / 3;
+    margin-right: 16px;
+}
+
+.lower-header-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.greeting-container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.greeting-container p:last-child {
+    font-size: 1.5rem;
+}
+
+.profile-button-container{
+    justify-self: end;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 32px;
+}
+
+button {
+    background-color: var(--button-background-color);
+    color: white;
+    height: 50px;
+    width: 120px;
+    border: none;
+    font-weight: bold;
+    font-size: 1.25rem;
 }
 
 .main-container {
