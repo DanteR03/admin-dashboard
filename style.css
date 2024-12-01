@@ -31,6 +31,7 @@ body {
     align-items: start;
     gap: 32px;
     color: #ffffff;
+    font-weight: bold;
 }
 
 .sidebar-container p {
@@ -60,8 +61,59 @@ body {
 }
 
 .header-container {
-    background-color: lightgray;
     grid-column: 2 / 3;
+    display: grid;
+    align-items: center;
+    font-size: 1.5rem;
+    padding: 0px 32px;
+}
+
+.upper-header-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+}
+
+.upper-header-container img {
+    width: 1.5rem;
+}
+
+.upper-header-container > div {
+    display: grid;
+    align-items: center;
+}
+
+.search-container {
+    grid-template-columns: auto 1fr;
+    gap: 8px;
+}
+
+.search-container input {
+    border-radius: 25px;
+    height: 2rem;
+    background-color: lightgrey;
+    outline: none;
+    border: none;
+}
+
+.search-container img {
+    justify-self: end;
+}
+
+.profile-container {
+    display: grid;
+    grid-template-columns: min-content min-content 1fr;
+    gap: 32px;
+    justify-self: end;
+    padding-right: 64px;
+    font-weight: bold;
+}
+
+.profile-avatar {
+    width: 50px;
+    height: 50px;
+    background-color: lightgrey;
+    border-radius: 50%;
 }
 
 .main-container {
