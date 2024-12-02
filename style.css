@@ -67,8 +67,7 @@ body {
     display: grid;
     align-items: center;
     font-size: 1.5rem;
-    padding-left: 32px;
-    padding-right: 64px;
+    padding: 16px;
 }
 
 .upper-header-container {
@@ -248,4 +247,24 @@ button {
 
 .announcement:first-of-type {
     border: none;
+}
+
+.trending-container {
+    gap: 16px;
+    padding: 16px;
+}
+
+.trending {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto 1fr;
+}
+
+.trending p:last-of-type {
+    color: #808080;
+}
+
+.profile-avatar {
+    grid-row: 1 / 3;
+    margin-right: 16px;
 }
